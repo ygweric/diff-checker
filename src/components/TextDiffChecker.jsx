@@ -36,7 +36,7 @@ const TextDiffChecker = () => {
       <div className="w-100 flex h-[70vh] m-1 md:m-3 md:space-x-3 space-y-1 md:space-y-0 flex-col md:flex-row">
         <div className="flex-1 rounded-md md:mb-0 mb-10">
           <textarea
-            className="w-[100%] h-[100%] p-2 dark:bg-[#2b2b2b] dark:text-white rounded-md border-[2px] border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
+            className="w-[100%] h-[100%] text-[18px] p-2 dark:bg-[#2b2b2b] dark:text-white rounded-md border-[2px] border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
             placeholder="Old content"
             value={text1}
             onChange={(e) => handleTextChange(e, setText1)}
@@ -56,7 +56,7 @@ const TextDiffChecker = () => {
         </div>
         <div className="flex-1 rounded-md md:mb-0 mb-8">
           <textarea
-            className="w-[100%] h-[100%] p-2 rounded-md border-[2px] dark:bg-[#2b2b2b] dark:text-white border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
+            className="w-[100%] h-[100%] text-[18px] p-2 rounded-md border-[2px] dark:bg-[#2b2b2b] dark:text-white border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
             placeholder="New content"
             value={text2}
             onChange={(e) => handleTextChange(e, setText2)}
@@ -89,7 +89,7 @@ const TextDiffChecker = () => {
         </Link>
       </div>
       <div className="md:mt-11 md:m-3 m-2" id="result">
-        <div className=" bg-white p-2 md:p-2 rounded min-h-20 dark:bg-[#2b2b2b] dark:text-white">
+        <div className=" bg-white text-[18px] p-2 md:p-2 rounded min-h-20 dark:bg-[#2b2b2b] dark:text-white">
           {diff.length == 0 ? (
             <span className="text-[#676767c5] dark:text-[#ffffff89]">
               Difference results (if there are any)
