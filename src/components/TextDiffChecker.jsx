@@ -89,7 +89,7 @@ const TextDiffChecker = () => {
         </Link>
       </div>
       <div className="md:mt-11 md:m-3 m-2" id="result">
-        <div className=" bg-white text-[18px] p-2 md:p-2 rounded min-h-20 dark:bg-[#2b2b2b] dark:text-white">
+        <div className=" bg-white whitespace-pre-wrap	 text-[18px] p-2 md:p-2 rounded min-h-20 dark:bg-[#2b2b2b] dark:text-white">
           {diff.length == 0 ? (
             <span className="text-[#676767c5] dark:text-[#ffffff89]">
               Difference results (if there are any)
